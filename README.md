@@ -35,6 +35,8 @@
     * mongodb
     * mongoose
     * validator
+### Third-party Integration Libraries:
+  - Arkesel SMS notification library
 
 # Endpoints
   ### Organization
