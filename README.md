@@ -1,5 +1,5 @@
 # appointment-manager-api
-
+  - Appointment manager is a web service or API that allows an organization to create a time slot and a client can book an appointment with the organization. SMS notification will be sent to the client upon successfully registration and 15 minutes before time, the client is alert via SMS.
 
 ## Functions the API(web service)
   - Allows organizations to create a time slot for an appointment.
