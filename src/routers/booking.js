@@ -33,6 +33,19 @@ router.post('/api/v1/book/slot', auth, async(req, res) => {
     }
 })
 
+//Fetch or Get appointments created by users endpoint - organization
+router.get('/api/v1/bookings/all', auth, async(req, res) => {
+    try {
+        const bookings = await Book.find({})
+        if (!bookings) {
+            return res.status(404).send()
+        }
+        res.send(bookings)
+    } catch (e) {
+        res.status(500).send(e)
+    }
+})
+
 //Fetch time slots or appointment booked or created by a particular client endpoint
 router.get('/api/v1/book/slot/me', auth, async(req, res) => {
     try {
